@@ -10,7 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apiverve/acronymexpander-API.git"
+    "url": "git+https://github.com/apiverve/acronymexpander-api.git",
+    "directory": "npm"
   },
   "keywords": [
     "acronym", "acronym expander", "abbreviation", "expand acronym", "acronym meaning"
@@ -18,7 +19,7 @@
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/apiverve/acronymexpander-API/issues"
+    "url": "https://github.com/apiverve/acronymexpander-api/issues"
   },
   "homepage": "https://apiverve.com/marketplace/acronymexpander?utm_source=npm",
   "devDependencies": {
