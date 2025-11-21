@@ -17,11 +17,8 @@ def call_acronymexpander_api():
     Make a GET request to the Acronym Expander API
     """
     try:
-        # Build query parameters
-        params = {
-            # Add your parameters here
-            # Example: 'param1': 'value1'
-        }
+        # Query parameters
+        params &#x3D; {&#x27;acronym&#x27;: &#x27;API&#x27;, &#x27;context&#x27;: &#x27;software&#x27;}
 
         headers = {
             'x-api-key': API_KEY
