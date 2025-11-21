@@ -11,44 +11,38 @@
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/acronymexpander)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.AcronymExpander)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-acronymexpander/)
+[![CocoaPods](https://img.shields.io/badge/CocoaPods-EE3322?style=flat&logo=cocoapods&logoColor=white)](#-cocoapods-iosmacos)
+[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
 
 ## Quick Start
 
-### Using Plain JavaScript (Browser/HTML)
+### Using JavaScript
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Acronym Expander API Example</title>
-</head>
-<body>
-    <h1>Acronym Expander API Test</h1>
-    <button onclick="callAPI()">Call API</button>
-    <pre id="result"></pre>
+```javascript
+async function callAcronymExpanderAPI() {
+    try {
+        const params &#x3D; new URLSearchParams({
+            acronym: &#x27;API&#x27;,
+            context: &#x27;software&#x27;
+        });
 
-    <script>
-        async function callAPI() {
-            try {
-                const response = await fetch('https://api.apiverve.com/v1/acronymexpander?param=value', {
-                    method: 'GET',
-                    headers: {
-                        'x-api-key': 'YOUR_API_KEY_HERE'
-                    }
-                });
-
-                const data = await response.json();
-                document.getElementById('result').textContent = JSON.stringify(data, null, 2);
-            } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('result').textContent = 'Error: ' + error.message;
+        const response = await fetch(&#x60;https://api.apiverve.com/v1/acronymexpander?${params}&#x60;, {
+            method: 'GET',
+            headers: {
+                'x-api-key': 'YOUR_API_KEY_HERE'
             }
-        }
-    </script>
-</body>
-</html>
+        });
+
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+callAcronymExpanderAPI();
 ```
 
 ### Using cURL
@@ -98,9 +92,29 @@ pip install apiverve-acronymexpander
 
 ---
 
+### 🍎 CocoaPods (iOS/macOS)
+
+```ruby
+pod 'APIVerveAcronymExpander', '~> 1.0'
+```
+
+[**Package Code →**](./cocoapods/)
+
+---
+
+### 🤖 Android (JitPack)
+
+```gradle
+implementation 'com.github.apiverve:acronymexpander-api:1.0.0'
+```
+
+[**Package Code →**](./android/)
+
+---
+
 ## Features
 
-✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, and browsers
+✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, iOS/macOS, Android, and browsers
 ✅ **Simple authentication** - Just add your API key in the request header
 ✅ **Comprehensive documentation** - Full examples and API reference available
 ✅ **Production-ready** - Used by developers worldwide
@@ -135,21 +149,12 @@ x-api-key: YOUR_API_KEY_HERE
 
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
-### Rate Limits
-- **Free tier**: 100 requests/day
-- **Basic**: 10,000 requests/month
-- **Pro**: 100,000 requests/month
-- **Enterprise**: Custom limits
-
-[View pricing →](https://apiverve.com/pricing)
-
 ### Response Format
 All responses are JSON with this structure:
 ```json
 {
   "status": "ok",
-  "data": { ... },
-  "request_id": "..."
+  "data": { ... }
 }
 ```
 
@@ -157,8 +162,8 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 📧 **Email**: support@apiverve.com
-- 💬 **Issues**: [GitHub Issues](../../issues)
+- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
+- 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
 - 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
 
