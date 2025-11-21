@@ -23,12 +23,12 @@
 ```javascript
 async function callAcronymExpanderAPI() {
     try {
-        const params &#x3D; new URLSearchParams({
-            acronym: &#x27;API&#x27;,
-            context: &#x27;software&#x27;
+        const params = new URLSearchParams({
+            acronym: 'API',
+            context: 'software'
         });
 
-        const response = await fetch(&#x60;https://api.apiverve.com/v1/acronymexpander?${params}&#x60;, {
+        const response = await fetch(`https://api.apiverve.com/v1/acronymexpander?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
