@@ -1,73 +1,32 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace APIVerve
 {
     /// <summary>
-    /// Expansions data
-    /// </summary>
-    public class Expansions
-    {
-        [JsonProperty("expansion")]
-        public string Expansion { get; set; }
-
-        [JsonProperty("description")]
-        public string Description { get; set; }
-
-        [JsonProperty("category")]
-        public string Category { get; set; }
-
-    }
-    /// <summary>
-    /// Mostcommon data
-    /// </summary>
-    public class Mostcommon
-    {
-        [JsonProperty("expansion")]
-        public string Expansion { get; set; }
-
-        [JsonProperty("description")]
-        public string Description { get; set; }
-
-        [JsonProperty("category")]
-        public string Category { get; set; }
-
-    }
-    /// <summary>
-    /// Data data
-    /// </summary>
-    public class Data
-    {
-        [JsonProperty("acronym")]
-        public string Acronym { get; set; }
-
-        [JsonProperty("expansions")]
-        public Expansions[] Expansions { get; set; }
-
-        [JsonProperty("most_common")]
-        public Mostcommon Mostcommon { get; set; }
-
-        [JsonProperty("source")]
-        public string Source { get; set; }
-
-        [JsonProperty("context_provided")]
-        public string Contextprovided { get; set; }
-
-    }
-    /// <summary>
-    /// API Response object
+    /// Base API response object
+    /// This file will be regenerated based on the API's sample response
     /// </summary>
     public class ResponseObj
     {
+        /// <summary>
+        /// Status of the API response (e.g., "success", "error")
+        /// </summary>
         [JsonProperty("status")]
         public string Status { get; set; }
 
+        /// <summary>
+        /// Error message if the request failed
+        /// </summary>
         [JsonProperty("error")]
-        public object Error { get; set; }
+        public string Error { get; set; }
 
+        /// <summary>
+        /// The response data
+        /// </summary>
         [JsonProperty("data")]
-        public Data Data { get; set; }
-
+        public object Data { get; set; }
     }
 }
