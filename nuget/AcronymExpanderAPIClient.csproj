@@ -15,7 +15,7 @@
     <PackageProjectUrl>https://apiverve.com/marketplace/acronymexpander</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
     <Description>Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.</Description>
-    <RepositoryUrl>https://github.com/apiverve/acronymexpander.NET-API</RepositoryUrl>
+    <RepositoryUrl>https://github.com/apiverve/acronymexpander-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>acronym;acronym expander;abbreviation;expand acronym;acronym meaning;api;rest;http;client;apiverve;wrapper;sdk;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
     <Copyright>©2025 APIVerve. All Rights Reserved</Copyright>
