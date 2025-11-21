@@ -13,15 +13,13 @@ const API_URL = 'https://api.apiverve.com/v1/acronymexpander';
  */
 async function callAcronymExpanderAPI() {
   try {
-    // Build query parameters
-    const params = new URLSearchParams({
-      // Add your parameters here
-      // Example: param1: 'value1'
-    });
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            acronym: &#x27;API&#x27;,
+            context: &#x27;software&#x27;
+        });
 
-    const url = `${API_URL}?${params}`;
-
-    const response = await fetch(url, {
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
