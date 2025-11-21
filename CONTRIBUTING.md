@@ -51,6 +51,20 @@ pip install -r requirements.txt
 python -m pytest
 ```
 
+### CocoaPods Package
+```bash
+cd cocoapods/
+pod install
+# Run tests in Xcode
+```
+
+### Android Package
+```bash
+cd android/
+gradle build
+gradle test
+```
+
 ## Pull Request Process
 
 1. **Fork** the repository
@@ -73,6 +87,8 @@ python -m pytest
 - **JavaScript/Node.js**: Follow existing conventions
 - **.NET/C#**: Follow Microsoft C# guidelines
 - **Python**: Follow PEP 8
+- **Swift**: Follow Swift API Design Guidelines
+- **Java**: Follow Google Java Style Guide
 
 ## Testing
 
@@ -85,7 +101,7 @@ All contributions must include tests:
 
 - 📚 **Documentation**: [https://docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander)
 - 💬 **Discussions**: [GitHub Discussions](../../discussions)
-- 📧 **Email**: support@apiverve.com
+- 🆘 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 
 ## Code of Conduct
 
