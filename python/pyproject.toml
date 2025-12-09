@@ -1,6 +1,6 @@
 [project]
 name = "apiverve-acronymexpander"
-version = "1.1.9"
+version = "1.1.12"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
@@ -43,6 +43,6 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://apiverve.com?utm_source=pypi"
-Repository = "https://github.com/apiverve/acronymexpander.Python-API"
+Repository = "https://github.com/apiverve/acronymexpander-api"
 Documentation = "https://docs.apiverve.com/api/acronymexpander?utm_source=pypi"
 Twitter = "https://twitter.com/apivervehq"
