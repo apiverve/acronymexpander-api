@@ -7,8 +7,23 @@ declare module '@apiverve/acronymexpander' {
   export interface acronymexpanderResponse {
     status: string;
     error: string | null;
-    data: any;
+    data: AcronymExpanderData;
     code?: number;
+  }
+
+
+  interface AcronymExpanderData {
+      acronym:         string;
+      expansions:      MostCommon[];
+      mostCommon:      MostCommon;
+      source:          string;
+      contextProvided: string;
+  }
+  
+  interface MostCommon {
+      expansion:   string;
+      description: string;
+      category:    string;
   }
 
   export default class acronymexpanderWrapper {
