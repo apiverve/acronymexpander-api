@@ -108,7 +108,7 @@ class acronymexpanderWrapper {
     constructURL(query) {
         let url = this.baseURL;
 
-        if(query && typeof query === 'object') 
+        if(query && typeof query === 'object')
         {
             if (Object.keys(query).length > 0) {
                 const queryString = Object.keys(query)
@@ -119,6 +119,7 @@ class acronymexpanderWrapper {
         }
         return url;
     }
+
 }
 
 module.exports = acronymexpanderWrapper;
