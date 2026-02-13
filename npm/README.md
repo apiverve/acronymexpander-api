@@ -61,7 +61,7 @@ Using the API is simple. All you have to do is make a request. The API will retu
 ```javascript
 var query = {
   acronym: "API",
-  context: "software"
+  context: "General"
 };
 
 api.execute(query, function (error, data) {
@@ -82,7 +82,7 @@ You can also use promises to make requests. The API returns a promise that you c
 ```javascript
 var query = {
   acronym: "API",
-  context: "software"
+  context: "General"
 };
 
 api.execute(query)
@@ -104,7 +104,7 @@ You can also use async/await to make requests. The API returns a promise that yo
 async function makeRequest() {
     var query = {
   acronym: "API",
-  context: "software"
+  context: "General"
 };
 
     try {
