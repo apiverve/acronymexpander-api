@@ -17,14 +17,11 @@ def call_acronymexpander_api():
     Make a GET request to the Acronym Expander API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;acronym&#x27;: &#x27;API&#x27;, &#x27;context&#x27;: &#x27;software&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
