@@ -16,7 +16,7 @@ const api = new acronymexpanderAPI({
 // Example query
 var query = {
   acronym: "API",
-  context: "software"
+  context: "General"
 };
 
 // Make the API request using callback
