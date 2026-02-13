@@ -12,13 +12,8 @@ public class BasicExample {
         AcronymExpanderAPIClient client = new AcronymExpanderAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Query parameters
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;acronym&quot;, &quot;API&quot;);
-        parameters.put(&quot;context&quot;, &quot;software&quot;);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
