@@ -27,12 +27,7 @@ The Acronym Expander API provides a simple, reliable way to integrate acronym ex
 ```javascript
 async function callAcronymExpanderAPI() {
     try {
-        const params = new URLSearchParams({
-            acronym: 'API',
-            context: 'software'
-        });
-
-        const response = await fetch(`https://api.apiverve.com/v1/acronymexpander?${params}`, {
+        const response = await fetch('https://api.apiverve.com/v1/acronymexpander', {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
