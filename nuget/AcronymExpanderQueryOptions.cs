@@ -12,14 +12,12 @@ namespace APIVerve.API.AcronymExpander
     {
         /// <summary>
         /// The acronym to expand (max 20 characters)
-        /// Example: API
         /// </summary>
         [JsonProperty("acronym")]
         public string Acronym { get; set; }
 
         /// <summary>
         /// Optional context to help determine the correct meaning
-        /// Example: software
         /// </summary>
         [JsonProperty("context")]
         public string Context { get; set; }
