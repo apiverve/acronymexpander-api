@@ -1,1 +1,3 @@
-from .apiClient import AcronymexpanderAPIClient
+from .apiClient import AcronymexpanderAPIClient, AcronymexpanderAPIClientError
+
+__all__ = ['AcronymexpanderAPIClient', 'AcronymexpanderAPIClientError']
