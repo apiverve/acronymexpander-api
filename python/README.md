@@ -44,7 +44,10 @@ from apiverve_acronymexpander.apiClient import AcronymexpanderAPIClient
 # Initialize the client with your APIVerve API key
 api = AcronymexpanderAPIClient("[YOUR_API_KEY]")
 
-query = { "acronym": "API", "context": "General" }
+query = {
+    "acronym": "API",
+    "context": "General"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "acronym": "API", "context": "General" }
+query = {
+    "acronym": "API",
+    "context": "General"
+}
 ```
 
 ###### Simple Request
@@ -134,7 +140,10 @@ from apiverve_acronymexpander.apiClient import AcronymexpanderAPIClient, Acronym
 
 api = AcronymexpanderAPIClient("[YOUR_API_KEY]")
 
-query = { "acronym": "API", "context": "General" }
+query = {
+    "acronym": "API",
+    "context": "General"
+}
 
 try:
     result = api.execute(query)
@@ -155,7 +164,10 @@ from apiverve_acronymexpander.apiClient import AcronymexpanderAPIClient, Acronym
 
 api = AcronymexpanderAPIClient("[YOUR_API_KEY]")
 
-query = { "acronym": "API", "context": "General" }
+query = {
+    "acronym": "API",
+    "context": "General"
+}
 
 try:
     result = api.execute(query)
@@ -189,7 +201,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_acronymexpander.apiClient import AcronymexpanderAPIClient, AcronymexpanderAPIClientError
 
-query = { "acronym": "API", "context": "General" }
+query = {
+    "acronym": "API",
+    "context": "General"
+}
 
 # Using context manager ensures proper cleanup
 with AcronymexpanderAPIClient("[YOUR_API_KEY]") as api:
@@ -215,7 +230,10 @@ from apiverve_acronymexpander.apiClient import AcronymexpanderAPIClient
 # Enable debug mode
 api = AcronymexpanderAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "acronym": "API", "context": "General" }
+query = {
+    "acronym": "API",
+    "context": "General"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -230,8 +248,12 @@ from apiverve_acronymexpander.apiClient import AcronymexpanderAPIClient
 
 api = AcronymexpanderAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "acronym": "API",
+    "context": "General"
+}
+
 try:
-    query = { "acronym": "API", "context": "General" }
     result = api.execute(query)
     print(result)
 finally:
