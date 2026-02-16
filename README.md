@@ -15,7 +15,10 @@ The Acronym Expander API provides a simple, reliable way to integrate acronym ex
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/acronymexpander)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.AcronymExpander)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-acronymexpander/)
+[![RubyGems](https://img.shields.io/badge/RubyGems-E9573F?style=flat&logo=rubygems&logoColor=white)](https://rubygems.org/gems/apiverve_acronymexpander)
+[![Packagist](https://img.shields.io/badge/Packagist-F28D1A?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/apiverve/acronymexpander)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://pub.dev/packages/apiverve_acronymexpander)
 [![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
@@ -88,6 +91,36 @@ pip install apiverve-acronymexpander
 ```
 
 [**View PyPI Package →**](https://pypi.org/project/apiverve-acronymexpander/) | [**Package Code →**](./python/)
+
+---
+
+### 💎 Ruby (RubyGems)
+
+```bash
+gem install apiverve_acronymexpander
+```
+
+[**View RubyGems Package →**](https://rubygems.org/gems/apiverve_acronymexpander) | [**Package Code →**](./ruby/)
+
+---
+
+### 🐘 PHP (Packagist)
+
+```bash
+composer require apiverve/acronymexpander
+```
+
+[**View Packagist Package →**](https://packagist.org/packages/apiverve/acronymexpander) | [**Package Code →**](./php/)
+
+---
+
+### 🎯 Dart (pub.dev)
+
+```bash
+dart pub add apiverve_acronymexpander
+```
+
+[**View pub.dev Package →**](https://pub.dev/packages/apiverve_acronymexpander) | [**Package Code →**](./dart/)
 
 ---
 
