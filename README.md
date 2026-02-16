@@ -1,199 +1,110 @@
-# [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# Acronym Expander API - PHP Package
 
 Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.
 
-The Acronym Expander API provides a simple, reliable way to integrate acronym expander functionality into your applications. Built for developers who need production-ready acronym expander capabilities without the complexity of building from scratch.
-
-**[View API Details →](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
-[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
-
-**Available on:**
-[![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/acronymexpander)
-[![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.AcronymExpander)
-[![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-acronymexpander/)
-[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
-[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
-
----
-
-## Quick Start
-
-### Using JavaScript
-
-```javascript
-async function callAcronymExpanderAPI() {
-    try {
-        const response = await fetch('https://api.apiverve.com/v1/acronymexpander', {
-            method: 'GET',
-            headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE'
-            }
-        });
-
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
-
-callAcronymExpanderAPI();
-```
-
-### Using cURL
-
-```bash
-curl -X GET "https://api.apiverve.com/v1/acronymexpander?param=value" \
-  -H "x-api-key: YOUR_API_KEY_HERE"
-```
-
-**Get your API key:** [https://apiverve.com](https://apiverve.com)
-
-**📁 For more examples, see the [examples folder](./examples/)**
-
----
-
 ## Installation
 
-Choose your preferred programming language:
-
-### 📦 NPM (JavaScript/Node.js)
+Install via Composer:
 
 ```bash
-npm install @apiverve/acronymexpander
+composer require apiverve/acronymexpander
 ```
 
-[**View NPM Package →**](https://www.npmjs.com/package/@apiverve/acronymexpander) | [**Package Code →**](./npm/)
+## Getting Started
 
----
+Get your API key at [APIVerve](https://apiverve.com)
 
-### 🔷 NuGet (.NET/C#)
+### Basic Usage
 
-```bash
-dotnet add package APIVerve.API.AcronymExpander
+```php
+<?php
+
+require_once 'vendor/autoload.php';
+
+use APIVerve\Acronymexpander\Client;
+
+// Initialize the client
+$client = new Client('YOUR_API_KEY');
+
+// Make a request
+$response = $client->execute([
+    'acronym' => 'API',
+    'context' => 'General'
+]);
+
+// Print the response
+print_r($response);
 ```
 
-[**View NuGet Package →**](https://www.nuget.org/packages/APIVerve.API.AcronymExpander) | [**Package Code →**](./nuget/)
 
----
+### Error Handling
 
-### 🐍 Python (PyPI)
+```php
+use APIVerve\Acronymexpander\Client;
+use APIVerve\Acronymexpander\Exceptions\APIException;
+use APIVerve\Acronymexpander\Exceptions\ValidationException;
 
-```bash
-pip install apiverve-acronymexpander
+try {
+    $response = $client->execute(['acronym' => 'API', 'context' => 'General']);
+    print_r($response['data']);
+} catch (ValidationException $e) {
+    echo "Validation error: " . implode(', ', $e->getErrors());
+} catch (APIException $e) {
+    echo "API error: " . $e->getMessage();
+    echo "Status code: " . $e->getStatusCode();
+}
 ```
 
-[**View PyPI Package →**](https://pypi.org/project/apiverve-acronymexpander/) | [**Package Code →**](./python/)
+### Debug Mode
 
----
-
-### 🤖 Android (JitPack)
-
-```gradle
-implementation 'com.github.apiverve:acronymexpander-api:1.0.0'
+```php
+// Enable debug logging
+$client = new Client(
+    apiKey: 'YOUR_API_KEY',
+    debug: true
+);
 ```
 
-[**Package Code →**](./android/)
+## Example Response
 
----
-
-### 🐹 Go
-
-```bash
-go get github.com/apiverve/acronymexpander-api/go
-```
-
-[**Package Code →**](./go/)
-
----
-
-## Why Use This API?
-
-| Feature | Benefit |
-|---------|---------|
-| **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
-| **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
-| **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
-
----
-
-## Documentation
-
-- 🏠 **API Home:** [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-- 📚 **API Reference:** [docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander)
-- 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
-- 💡 **Examples:** [examples/](./examples/)
-
----
-
-## What Can You Build?
-
-The Acronym Expander API is commonly used for:
-
-- **Web Applications** - Add acronym expander features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
-- **Automation** - Integrate with n8n, Zapier, or custom workflows
-- **SaaS Products** - Enhance your product with acronym expander capabilities
-- **Data Pipelines** - Process and analyze data at scale
-
----
-
-## API Reference
-
-### Authentication
-All requests require an API key in the header:
-```
-x-api-key: YOUR_API_KEY_HERE
-```
-
-Get your API key: [https://apiverve.com](https://apiverve.com)
-
-### Response Format
-All responses are JSON with this structure:
 ```json
 {
   "status": "ok",
-  "data": { ... }
+  "error": null,
+  "data": {
+    "acronym": "API",
+    "expansions": [
+      {
+        "expansion": "Application Programming Interface",
+        "description": "A set of protocols for building software",
+        "category": "technology"
+      }
+    ],
+    "most_common": {
+      "expansion": "Application Programming Interface",
+      "description": "A set of protocols for building software",
+      "category": "technology"
+    },
+    "source": "dictionary",
+    "context_provided": "software"
+  }
 }
 ```
 
----
+## Requirements
 
-## Support & Community
+- PHP 7.4 or higher
+- Guzzle HTTP client
 
-- 🏠 **API Home**: [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
-- 🐛 **Issues**: [GitHub Issues](../../issues)
-- 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
-- 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
+## Documentation
 
----
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/acronymexpander?utm_source=packagist&utm_medium=readme).
 
-## Contributing
+## Support
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## Security
-
-For security concerns, please review our [Security Policy](SECURITY.md).
-
----
+- Website: [https://apiverve.com/marketplace/acronymexpander?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/acronymexpander?utm_source=php&utm_medium=readme)
+- Email: hello@apiverve.com
 
 ## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-Built with ❤️ by [APIVerve](https://apiverve.com)
-
-Copyright © 2026 APIVerve. All rights reserved.
+This package is available under the [MIT License](LICENSE).
