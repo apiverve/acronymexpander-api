@@ -1,3 +1,0 @@
-# Empty .pubignore overrides parent .gitignore
-# All package files (pubspec.yaml, LICENSE, README.md, etc.) will be included
-.dart_tool/
