@@ -1,6 +1,6 @@
 name: apiverve_acronymexpander
 description: Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.
-version: 1.1.13
+version: 1.1.14
 homepage: https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=homepage
 repository: https://github.com/apiverve/acronymexpander-api/tree/main/dart
 
