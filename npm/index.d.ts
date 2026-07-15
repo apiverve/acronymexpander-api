@@ -4,26 +4,38 @@ declare module '@apiverve/acronymexpander' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface acronymexpanderResponse {
     status: string;
     error: string | null;
     data: AcronymExpanderData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface AcronymExpanderData {
-      acronym:         string;
+      acronym:         null | string;
       expansions:      MostCommon[];
       mostCommon:      MostCommon;
-      source:          string;
-      contextProvided: string;
+      source:          null | string;
+      contextProvided: null | string;
   }
   
   interface MostCommon {
-      expansion:   string;
-      description: string;
-      category:    string;
+      expansion:   null | string;
+      description: null | string;
+      category:    null | string;
   }
 
   export default class acronymexpanderWrapper {
