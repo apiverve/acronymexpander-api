@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/acronymexpander",
-  "version": "1.2.0",
-  "description": "Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.",
+  "version": "1.2.2",
+  "description": "Acronym Expander resolves acronyms and abbreviations into their full meanings, complete with subject categories and definitions. Submit any short term up to 20 characters to get matching expansions and explanations for each domain.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    ""
+    "acronym api", "acronym meaning api", "abbreviation api", "acronym expander api", "acronym lookup api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/acronymexpander-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/acronymexpander?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/acronymexpander?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
