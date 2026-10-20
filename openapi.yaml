@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: Acronym Expander
   description: >-
-    Acronym Expander is an AI-powered tool for expanding acronyms to their full
-    meanings. It uses a dictionary of common acronyms and AI for unknown ones,
-    with optional context for better accuracy.
+    Acronym Expander resolves acronyms and abbreviations into their full
+    meanings, complete with subject categories and definitions. Submit any short
+    term up to 20 characters to get matching expansions and explanations for
+    each domain.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/acronymexpander:
     get:
-      summary: Expand Acronym
+      summary: Acronym Expander
       description: Expand an acronym to its full meaning with AI assistance
       operationId: acronymexpander
       parameters:

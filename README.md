@@ -1,13 +1,13 @@
-# [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.
+Acronym Expander resolves acronyms and abbreviations into their full meanings, complete with subject categories and definitions. Submit any short term up to 20 characters to get matching expansions and explanations for each domain.
 
 The Acronym Expander API provides a simple, reliable way to integrate acronym expander functionality into your applications. Built for developers who need production-ready acronym expander capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/acronymexpander-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -234,7 +234,7 @@ A real response from the Acronym Expander API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
