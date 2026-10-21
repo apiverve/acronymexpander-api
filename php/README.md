@@ -1,6 +1,6 @@
 # Acronym Expander API - PHP Package
 
-Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.
+Acronym Expander resolves acronyms and abbreviations into their full meanings, complete with subject categories and definitions. Submit any short term up to 20 characters to get matching expansions and explanations for each domain.
 
 ## Installation
 
@@ -98,11 +98,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/acronymexpander?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/acronymexpander?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/acronymexpander?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/acronymexpander?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/acronymexpander?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/acronymexpander?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
