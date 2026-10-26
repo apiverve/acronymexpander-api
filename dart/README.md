@@ -1,11 +1,11 @@
 # Acronym Expander API - Dart/Flutter Client
 
-Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.
+Acronym Expander resolves acronyms and abbreviations into their full meanings, complete with subject categories and definitions. Submit any short term up to 20 characters to get matching expansions and explanations for each domain.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_acronymexpander.svg)](https://pub.dev/packages/apiverve_acronymexpander)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_acronymexpander: ^1.1.14
+  apiverve_acronymexpander: ^1.2.3
 ```
 
 Then run:
@@ -74,12 +74,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander?utm_source=dart&utm_medium=readme)
+- **API Home:** [Acronym Expander API](https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -87,4 +87,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

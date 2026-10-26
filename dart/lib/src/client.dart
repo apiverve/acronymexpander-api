@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Acronym Expander API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/acronymexpander?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [acronym] (required) - The acronym to expand (max 20 characters) [maxLength: 20]
