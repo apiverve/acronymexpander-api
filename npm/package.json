@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/acronymexpander",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Acronym Expander resolves acronyms and abbreviations into their full meanings, complete with subject categories and definitions. Submit any short term up to 20 characters to get matching expansions and explanations for each domain.",
   "main": "index.js",
   "types": "index.d.ts",
