@@ -1,9 +1,11 @@
 # Acronym Expander iOS/macOS SDK
 
-Acronym Expander is an AI-powered tool for expanding acronyms to their full meanings. It uses a dictionary of common acronyms and AI for unknown ones, with optional context for better accuracy.
+Acronym Expander resolves acronyms and abbreviations into their full meanings, complete with subject categories and definitions. Submit any short term up to 20 characters to get matching expansions and explanations for each domain.
+
+The Acronym Expander API is available on [APIVerve](https://apiverve.com/marketplace/acronymexpander?utm_source=cocoapods&utm_medium=referral&utm_content=readme), which has its full reference, pricing and a live test console.
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-iOS%2015%2B%20%7C%20macOS%2012%2B-blue.svg)
 ![Swift](https://img.shields.io/badge/Swift-5.0+-orange.svg)
 
 ---
@@ -15,13 +17,15 @@ Acronym Expander is an AI-powered tool for expanding acronyms to their full mean
 Add this to your `Podfile`:
 
 ```ruby
-pod 'APIVerveAcronymExpander', '~> 1.1.9'
+pod 'APIVerveAcronymExpander', '~> 1.2.3'
 ```
 
 Then run:
 ```bash
 pod install
 ```
+
+This also installs `APIVerveCore`, which holds the types shared by every APIVerve pod (`APIResponse`, `APIVerveError`, `APIVerveValue`). `import APIVerveAcronymExpander` re-exports it, so you never import it yourself, and using several APIVerve pods together never makes those names ambiguous.
 
 ---
 
@@ -79,7 +83,7 @@ client.execute(parameters: parameters) { result in
 
 ## Error Handling
 
-The SDK provides detailed error handling:
+Failures are `APIVerveError` (`AcronymExpanderAPIError` is the same type):
 
 ```swift
 client.execute(parameters: params) { result in
@@ -105,21 +109,35 @@ client.execute(parameters: params) { result in
 
 ## API Documentation
 
-For detailed API documentation, visit: [https://docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander)
+For detailed API documentation, visit: [https://docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander?utm_source=cocoapods&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Get Your API Key
 
-Get your API key from [https://apiverve.com](https://apiverve.com)
+Get your API key from [https://apiverve.com](https://apiverve.com?utm_source=cocoapods&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Support
 
-- **Documentation:** [https://docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander)
+- **Documentation:** [https://docs.apiverve.com/ref/acronymexpander](https://docs.apiverve.com/ref/acronymexpander?utm_source=cocoapods&utm_medium=referral&utm_content=readme)
 - **Issues:** [GitHub Issues](https://github.com/apiverve/acronymexpander-api/issues)
 - **Email:** hello@apiverve.com
+
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=cocoapods&utm_medium=referral&utm_content=readme).
+
+---
+
+## Updates
+
+Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Twitter.
+
+---
+
+## Legal
+
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=cocoapods&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=cocoapods&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -131,4 +149,4 @@ This SDK is released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## About APIVerve
 
-[APIVerve](https://apiverve.com) provides production-ready REST APIs for developers. Fast, reliable, and easy to integrate.
+[APIVerve](https://apiverve.com?utm_source=cocoapods&utm_medium=referral&utm_content=readme) provides production-ready REST APIs for developers. Fast, reliable, and easy to integrate.
